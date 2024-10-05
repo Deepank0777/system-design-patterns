@@ -1,0 +1,9 @@
+The issue in this example is
+1. Animal is a base class that every other class extends
+    1.1. Animal is base class/parent and rest are sub classes
+2.  Animal has a function fly and when it was written we had only bird type animals
+    moving forward as the code started growing we have to make it functional for Dogs etc
+3. When a Dog was created we did method override of fly() and returned "can't fly"
+4. Codebase even grew further we had to add Lion
+5. This time again as a only option we had to override the function and returned "can't fly"
+6. Issue: code repatability, can't reuse the code  
